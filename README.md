@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Validator AI — Startup Idea & Problem Validator
 
-## Getting Started
+Validator AI is an AI-driven market research and startup validation platform developed during a hackathon. The system validates business ideas by scanning social discussions (such as Reddit) and analyzing target audience pain points to ensure problem-solution fit before launching products.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+- **Frontend / Application:** https://validator-ai-theta.vercel.app/
+
+---
+
+## ✨ Key Features
+
+- **Automated Market Research:** Scans community discussions (e.g., Reddit, forums) for real target audience feedback.
+- **Pain Point Analysis:** Evaluates whether the user's business idea addresses an existing, high-demand problem.
+- **n8n Workflow Integration:** Designed to integrate with automated n8n workflows for multi-bot processing and web scraping triggers.
+- **AI-Powered Evaluation:** Leverages LLM agents to cross-examine problem severity, existing solutions, and market opportunity.
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+- **Automation / Integration:** n8n Workflow Automation
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or pnpm
+
+### Installation & Local Setup
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/ZaurAsgarli/Validator_AI.git](https://github.com/ZaurAsgarli/Validator_AI.git)
+   cd Validator_AI
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open http://localhost:3000 in your browser to view the application.
+
+---
+
+## 📌 Architecture Overview
+
+```text
+Validator_AI/
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── find-users/      # API endpoint for scanning user feedback
+│   │   ├── globals.css          # Global style definitions
+│   │   ├── layout.tsx           # Main application layout wrapper
+│   │   └── page.tsx             # Validation dashboard interface
+│   └── components/              # Modular UI components (UserCard, etc.)
+└── public/                      # Static assets and icons
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
